@@ -1,0 +1,13 @@
+{
+  "TOKEN":"Bot Token",
+  "owners": ["Your id"],
+  "nodes": [
+    {
+      "name": "NODE_1",
+      "host":"url", 
+      "port": your port,
+      "password": "lavalink password",
+      "secure": true
+    }
+  ],
+  "logs":false
