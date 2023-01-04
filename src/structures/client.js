@@ -1,5 +1,5 @@
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
-const slashHandler = require("@handlers/Slash");
+const slashHandler = require("./handlers/Slash");
 const eventHandler = require("./handlers/Events");
 const poruHandler = require("./handlers/PoruEvents");
 const logger = require("./logger");
