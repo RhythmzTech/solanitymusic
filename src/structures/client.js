@@ -31,7 +31,7 @@ class client extends Client {
 
         // data to client \\
         new eventHandler(this).start();
-        slashHandler(this)
+        new slashHandler(this).initCommands(this);
         new poruHandler(this).start();
         
         
