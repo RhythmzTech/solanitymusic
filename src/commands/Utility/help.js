@@ -41,7 +41,6 @@ module.exports = {
         .addFields(categories)
       
         .setTimestamp()
-        .setColor('White')
         .setThumbnail(client.user.avatarURL())
         .setTimestamp();
       return interaction.reply({ embeds: [embed] });
