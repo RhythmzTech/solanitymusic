@@ -1,14 +1,6 @@
 /**
  * @typedef {Object} CommandOptions Class Properties
- * @property {string} name Name for the command
- * @property {{ content: string; usage: string; examples: Array<string>}} description A description with three more properties for the command
- * @property {?Array<string>} aliases A array of aliases for the command
- * @property {?number} cooldown The cooldown for the command
- * @property {?{ voice: boolean; dj: boolean; active: boolean; djPerm: any }} player Dispatcher checks
- * @property {?{ dev: boolean; client: import('discord.js').PermissionResolvable; user: import('discord.js').PermissionResolvable; voteRequired: boolean; }} permissions Permission Resolves
- * @property {?boolean} slashCommand To specify if it's a slash command
  * @property {?import('discord.js').ApplicationCommandOption} options Slash Command options
- * @property {?string} category The category the command belongs to
  */
 
 
