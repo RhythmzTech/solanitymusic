@@ -37,7 +37,7 @@ async execute (client,interaction) {
     //Error handling
 
     try {
-      command.run(client, interaction);
+      return await command.run(client, interaction);
     } catch (error) {
       interaction.reply(error.message);
     }

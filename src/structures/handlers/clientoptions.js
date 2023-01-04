@@ -1,5 +1,5 @@
 const {GatewayIntentBits} = require("discord.js");
-const gbi = GatewayIntentBits;
+const gib = GatewayIntentBits;
 module.exports={
     failIfNotExists: true,
     allowedMentions: {
@@ -7,8 +7,8 @@ module.exports={
       repliedUser: false,
     },
     intents: [
-      gbi.Guilds,
-      gbi.GuildVoiceStates,
-      gbi.GuildMessages
+      gib.Guilds,
+      gib.GuildVoiceStates,
+      gib.GuildMessages
     ]
 }

@@ -18,6 +18,7 @@ class slashHandler {
         for (const x of readdirSync(join(__dirname, "..", "..", "commands"))) {
             for (let command of readdirSync(join(__dirname, "..", "..", "Commands", x))) {
                 command = require(`../../commands/${x}/${command}`)
+               
                 client.slashCommands.set(command.name, command)
                 slash.push(command);
                 notImportantCount++;
