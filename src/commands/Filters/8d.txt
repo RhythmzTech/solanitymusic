@@ -1,0 +1,22 @@
+
+const { EmbedBuilder } = require("discord.js")
+module.exports = {
+  name: "8d",
+  description:"bassboost filter",
+  inVc: true,
+  sameVc: true,
+  player: true,
+  current: true,
+  
+  run: async (client, interaction) => {
+ let player = client.poru.players.get(interaction.guild.id);
+ 
+ 
+   player.filters.set8D((false||null||0)?true:false);
+
+ const embed = new EmbedBuilder()
+
+ .setDescription(`**8D** has been enabled.`)
+interaction.reply({embeds: [embed]})
+  }
+}
