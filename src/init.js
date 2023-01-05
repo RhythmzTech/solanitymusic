@@ -1,3 +1,4 @@
+
 const config = require("../config.json")
 const clop = require("./structures/handlers/clientoptions")
 console.log("LOGGING IN....");

@@ -10,7 +10,7 @@ module.exports = {
   async run (client, interaction) {
     
     const embed = new EmbedBuilder()
-      .setDescription(`pong! - ${client.ws.ping}`);
+      .setDescription(`**pong! - ${client.ws.ping}**`);
       interaction.reply({embeds:[embed]});
   }
 };
