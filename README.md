@@ -84,11 +84,11 @@ node .
  ```
  *To*-
  ```js
- const { TOKEN } = require("./src/config.js");
+ const { TOKEN } = require("./config.json");
 
 const { ShardingManager } = require("discord.js");
 
-const manager = new ShardingManager("./src/index.js", {
+const manager = new ShardingManager("./src/init.js", {
 
 respawn: true,
 
