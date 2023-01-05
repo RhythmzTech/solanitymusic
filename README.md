@@ -1,8 +1,8 @@
-# LAVAMUSICBOT
+# SOLANITYMUSIC
 
   
 
-*Lavamusicbot* is a bot coded in **javascript** using **discord.js** and **poru**. 
+*Solanitymusic* is a discord bot coded in **javascript** using **discord.js** and **poru**. 
 
   
 
