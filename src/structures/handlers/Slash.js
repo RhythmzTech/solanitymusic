@@ -12,23 +12,24 @@ let notImportantCount = 0;
 class slashHandler {
     constructor(c) {
         c.logger.debug('COMMANDS', 'Loading commands')
+        this.client=c;
         
     }
-    initCommands(client) {
+    initCommands() {
         for (const x of readdirSync(join(__dirname, "..", "..", "commands"))) {
             for (let command of readdirSync(join(__dirname, "..", "..", "Commands", x))) {
                 command = require(`../../commands/${x}/${command}`)
                
-                client.slashCommands.set(command.name, command)
+                this.client.slashCommands.set(command.name, command)
                 slash.push(command);
                 notImportantCount++;
             }
         }
-        client.logger.debug('COMMANDS', `Loaded ${notImportantCount} commands`)
-        client.on("ready", async () => {
+        this.client.logger.debug('COMMANDS', `Loaded ${notImportantCount} commands`)
+        this.client.on("ready", async () => {
 
-            await client.application.commands.set(slash);
-            client.logger.debug('SLASH_COMMANDS', 'Registered slash commands')
+            await this.client.application.commands.set(slash);
+            this.client.logger.debug('SLASH_COMMANDS', 'Registered slash commands')
         })
     }
 

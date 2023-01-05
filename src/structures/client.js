@@ -31,7 +31,7 @@ class client extends Client {
 
         // data to client \\
         new eventHandler(this).start();
-        new slashHandler(this).initCommands(this);
+        new slashHandler(this).initCommands();
         new poruHandler(this).start();
         
         
@@ -47,6 +47,10 @@ class client extends Client {
                 return x
             })
             .catch(err => console.log(err))
+    }
+
+    async dbconnect(){
+      console.log("comming soon")
     }
     
 }
