@@ -52,7 +52,7 @@ node .
 
           "name": "NODE_1",
           "host":"host",
-          "port": your port,
+          "port": 443,
           "password": "pass",
           "secure": true
         }],
