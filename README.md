@@ -96,7 +96,7 @@ autoSpawn: true,
 
 token: TOKEN,
 
-totalShards: auto,
+totalShards: "auto",
 
 shardList: "auto",
 
