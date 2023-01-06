@@ -24,7 +24,6 @@ class client extends Client {
             playlistLimit: 5,
           },
         });
-        this.aliases = new Collection();
         this.slashCommands = new Collection();
         this.config = cnfg;
         this.logger = new logger();
