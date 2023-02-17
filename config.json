@@ -1,0 +1,13 @@
+{
+  "TOKEN":"Bot Token",
+  "owners": ["601127931921563669","983787597627273267"],
+  "nodes": [
+    {
+      "name": "NODE_1",
+      "host":"node1.kartadharta.xyz", 
+      "port": 443,
+      "password": "kdlavalink",
+      "secure": true
+    }
+  ],
+  "logs":true
