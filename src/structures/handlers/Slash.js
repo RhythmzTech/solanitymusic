@@ -16,9 +16,9 @@ class slashHandler {
         
     }
     initCommands() {
-        for (const x of readdirSync(join(__dirname, "..", "..", "commands"))) {
+        for (const x of readdirSync(join(__dirname, "..", "..", "Commands"))) {
             for (let command of readdirSync(join(__dirname, "..", "..", "Commands", x))) {
-                command = require(`../../commands/${x}/${command}`)
+                command = require(`../../Commands/${x}/${command}`)
                
                 this.client.slashCommands.set(command.name, command)
                 slash.push(command);
