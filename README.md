@@ -31,7 +31,7 @@
 ## Getting started
 
 ```
-git clone https://github.com/DREXYOP/lavamusicbot.git
+git clone https://github.com/RhythmzTech/solanitymusic.git
 
 npm install
 
