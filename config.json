@@ -1,13 +1,14 @@
 {
-  "TOKEN":"Bot Token",
-  "owners": ["601127931921563669","983787597627273267"],
+  "TOKEN":"",
+  "owners": ["983787597627273267"],
   "nodes": [
     {
       "name": "NODE_1",
-      "host":"node1.kartadharta.xyz", 
+      "host":"lava1.horizxon.tech", 
       "port": 443,
-      "password": "kdlavalink",
+      "password": "horizxon.tech",
       "secure": true
     }
   ],
   "logs":true
+}
