@@ -4,7 +4,7 @@ const humanize = require("humanize-duration");
 
 module.exports = {
   name: "status",
-  description:"status of the server",
+  description:"status of the vps , owner only.",
   run: async(client , interaction) => {
     if(!client.config.owners.includes(interaction.user.id))return interaction.reply("You Are Not Allowed To Use This Command");
     try {
